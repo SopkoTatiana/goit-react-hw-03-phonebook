@@ -1,0 +1,57 @@
+.contactList {
+  min-width: 500px;
+  max-width: max-content;
+}
+
+.contactList__item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+}
+
+.contactList__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.contactList__btn {
+  align-items: center;
+  background-color: #ffe7e7;
+  background-position: 0 0;
+  border: 1px solid #fee0e0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #d33a2c;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  padding: 2px 12px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.contactList__btn:active,
+.contactList__btn:hover,
+.contactList__btn:focus {
+  outline: 0;
+}
+
+.contactList__btn:active {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.contactList__btn:hover {
+  background-color: #ffe3e3;
+  border-color: #faa4a4;
+}
+
+.contactList__btn:active:hover,
+.contactList__btn:focus:hover,
+.contactList__btn:focus {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
