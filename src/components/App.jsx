@@ -23,6 +23,10 @@ class App extends Component {
 
     if (prevState.contacts !== contacts) {
       localStorage.setItem('contacts', JSON.stringify(contacts));
+
+      if (localStorage.getItem('contacts') === '[]') {
+        localStorage.removeItem('contacts');
+      }
     }
   }
 
