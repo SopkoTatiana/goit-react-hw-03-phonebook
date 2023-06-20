@@ -5,7 +5,7 @@ const Filter = ({ onFilterChange }) => {
 };
 
 Filter.propTypes = {
-  onFilterChange: PropTypes.func,
+  onFilterChange: PropTypes.func.isRequired,
 };
 
 export default Filter;
